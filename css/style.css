@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(../img/mika-AZXye0EF9hE-unsplash.jpg);
+    background-attachment: fixed;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#global{
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 2px #ccc;
+
+}
+
+#logo{
+    font-family: Verdana,Arial;
+    font-size: 25px;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+    width: 385px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#menu{
+    font-family: helvetica, Arial;
+    background: #333;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#menu a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    transition: all 300ms;
+    text-transform: uppercase;
+    line-height: 46px;
+}
+
+#posts{
+    width: 60%;
+    float: left;
+    font-family: Helvetica, Arial;
+}
+
+.post{
+    padding: 7px;
+}
+
+.post h2{
+    font-size: 30px;
+    color: #333;
+}
+
+.post .date{
+    color: gray;
+    display: block;
+    margin-top: 5px;
+}
+
+.post p{
+    margin: 10px 0px 20px 0px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.post .button-more{
+    display:block;
+    width: 70px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0px 20px 0px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#aside{
+    font-family: Helvetica, Arial;
+    width:31%;
+    float:right;
+}
+
+#aside h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+}
+
+#aside img{
+    width: 100%;
+}
+
+#aside p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"]{
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+}
+
+footer{
+    font-family: Helvetica, Arial;
+    background: rgba(51, 51, 51, 0.70);
+    color: white;
+    height: 47px;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    margin-top: 65px;
+    line-height: 47px;
+}
+
+.bx-wrapper, .bx-viewport{
+    height: 250px !important;
+}
+
+#change-theme{
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51, 51, 0.70);
+    width: 50px;
+    height: 90px;
+}
+
+#togreen,#tored,#toblue{
+    width: 20px;
+    height: 20px;
+    border: 1px solid whitesmoke;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#togreen{
+    background: #235E3D;
+}
+
+#tored{
+    background: #CA3413;
+}
+
+#toblue{
+    background: #1F87C4;
+}
+
+.scroll{
+    text-decoration: none;
+    color: white;
+    float: right;
+}

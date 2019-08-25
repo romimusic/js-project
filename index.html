@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link id="theme" rel="stylesheet" href="css/green.css">
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--pluggin slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--pluggin fecha-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+    <!--Mi js-->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+    <div id="change-theme">
+        <div id="togreen"></div>
+        <div id="tored"></div>
+        <div id="toblue"></div>
+    </div>
+
+    <section id="global">
+        
+        <!-- cabecera -->
+        <header>
+            <div id="logo">
+                <h1>PROYECTO JS</h1>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <nav id="menu">
+                <a href="http://#">Inicio</a>
+                <a href="http://#">Reloj</a>
+                <a href="http://#">Sobre mi</a>
+                <a href="http://#">Contacto</a>
+
+            </nav>
+        </header>
+
+        <!--Slider-->
+        <div id="slider">
+            <div class="bxslider">
+                <div><img src="img/paisaje1.jpeg"></div>
+                <div><img src="img/paisaje2.jpeg"></div>
+                <div><img src="img/mika-AZXye0EF9hE-unsplash.jpg"></div>
+            </div>
+        </div>
+
+        <!--Contenido-->
+        <section id="content">
+            <div id="posts">
+            <!--Se agregan desde js con el forEach a través del appen-->
+        </div>
+
+        <aside id="aside">
+            <div class="about">
+                <h4>¿Quién Soy?</h4>
+                <img src="img/bethany-legg-75nbwHfDsnY-unsplash.jpg" alt="personal">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Perferendis fuga corporis et velit, natus dignissimos? 
+                Adipisci beatae quisquam illum quidem possimus deserunt 
+                pariatur molestiae deleniti repellendus. Ab consequuntur 
+                odit labore.</p>
+            </div>
+
+            <div id="login">
+                <h4>Identificate</h4>
+                <form action="">
+                    <input type="text" name="name" placeholder="Nombre y Apellido" id="form_name">
+                    <input type="email" name="correo" placeholder="Correo electrónico">
+                    <input type="password" name="password" placeholder="Contraseña">
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+            
+        </aside>
+
+        <div class="clearfix"></div>
+        
+        </section>
+
+    </section>
+    <footer>
+        Romina Ingallina &copy;
+        <a class="scroll" href="#">Inicio</a>
+    </footer>
+    
+</body>
+</html>
