@@ -9,3 +9,13 @@
 .post .button-more{
     background: #1F87c4;
 }
+
+form input[type="submit"] {
+    width: 70px;
+    background: #1F87c4;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+}

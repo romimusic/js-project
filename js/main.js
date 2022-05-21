@@ -12,28 +12,28 @@ $(document).ready(function(){
     //post
     var posts= [
         {
-            title: 'prueba de título 1',
-            date: 'publicado el ' + moment().format("DD/MM/ YY"),
+            title: 'Article 1',
+            date: 'Published ' + moment().format("DD/MM/ YY"),
             content: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores magni quam, debitis tenetur adipisci temporibus ab labore sit excepturi quas, voluptatibus blanditiis vitae repellat illum dolore perspiciatis possimus. Architecto, Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut, similique veniam iusto doloribus harum dicta nobis beatae aperiam, quas quae fugit atque. Ea sapiente fugiat inventore deleniti quae quaerat.',
         },    
         {
-            title: 'prueba de título 2',
-            date: 'publicado el ' + moment().format("DD/MM/ YY"),
+            title: 'Article 2',
+            date: 'Published ' + moment().format("DD/MM/ YY"),
             content: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores magni quam, debitis tenetur adipisci temporibus ab labore sit excepturi quas, voluptatibus blanditiis vitae repellat illum dolore perspiciatis possimus. Architecto, Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut, similique veniam iusto doloribus harum dicta nobis beatae aperiam, quas quae fugit atque. Ea sapiente fugiat inventore deleniti quae quaerat.',
         },
         {
-            title: 'prueba de título 3',
-            date: 'publicado el ' + moment().format("DD/MM/ YY"),
+            title: 'Article 3',
+            date: 'Published ' + moment().format("DD/MM/ YY"),
             content: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores magni quam, debitis tenetur adipisci temporibus ab labore sit excepturi quas, voluptatibus blanditiis vitae repellat illum dolore perspiciatis possimus. Architecto, Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut, similique veniam iusto doloribus harum dicta nobis beatae aperiam, quas quae fugit atque. Ea sapiente fugiat inventore deleniti quae quaerat.',
         },
         {
-            title: 'prueba de título 4',
-            date:'publicado el ' + moment().format("DD/MM/ YY"),
+            title: 'Article 4',
+            date:'Published ' + moment().format("DD/MM/ YY"),
             content: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores magni quam, debitis tenetur adipisci temporibus ab labore sit excepturi quas, voluptatibus blanditiis vitae repellat illum dolore perspiciatis possimus. Architecto, Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut, similique veniam iusto doloribus harum dicta nobis beatae aperiam, quas quae fugit atque. Ea sapiente fugiat inventore deleniti quae quaerat.',
         },
         {
-            title: 'prueba de título 5',
-            date: 'publicado el ' + moment().format("DD/MM/ YY"),
+            title: 'Article 5',
+            date: 'Published ' + moment().format("DD/MM/ YY"),
             content: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores magni quam, debitis tenetur adipisci temporibus ab labore sit excepturi quas, voluptatibus blanditiis vitae repellat illum dolore perspiciatis possimus. Architecto, Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut, similique veniam iusto doloribus harum dicta nobis beatae aperiam, quas quae fugit atque. Ea sapiente fugiat inventore deleniti quae quaerat.',
         }, 
     ]
@@ -53,7 +53,7 @@ $(document).ready(function(){
             $("#posts").append(post);
     })
 
-    // Selector de tema
+    //Theme Selector
     
    var theme= $("#theme");
     $("#togreen").click(function(){
@@ -68,7 +68,7 @@ $(document).ready(function(){
         theme.attr("href", "css/blue.css")
      });
 
-     //scroll automático
+     //automatic scroll
 
      $(".scroll").click(function(e){
          e.preventDefault();
@@ -80,20 +80,18 @@ $(document).ready(function(){
 
     // login falso
     $("#login form").submit(function(){
-       var nombre = $("#form_name").val();
-        localStorage.setItem("form_name", nombre);
+       var name = $("#form_name").val();
+        localStorage.setItem("form_name", name);
     });
 
-    var nombre2= localStorage.getItem("form_name");
+    var name2= localStorage.getItem("form_name");
 
-    if(nombre2){
+    if(name2){
       var about= $(".about p");
-      console.log("cdlm");
-      about.html("<br> Bienvenido, " + nombre2 ); 
-      about.append("<hr> <a href= '#' id= 'logout'> Cerrar Sesión </a>");
+      about.html("<br> Welcome, " + name2 ); 
+      about.append("<hr> <a href= '#' id= 'logout'> Log Out </a>");
       $("#login").hide(); 
       $("#logout").click(function(){
-          console.log("no puede ser");
         localStorage.clear();
         location.reload();
       });

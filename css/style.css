@@ -1,10 +1,11 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
-    background: url(../img/mika-AZXye0EF9hE-unsplash.jpg);
+    background: url(../img/fondo.jpg);
     background-attachment: fixed;
 }
 
@@ -14,13 +15,14 @@ body{
 }
 
 #global{
-    width: 65%;
+    width: 90%;
     margin: 0px auto;
     margin-top: 30px;
     padding: 20px;
-    background: white;
-    box-shadow: 0px 0px 2px #ccc;
-
+    color: #fff;
+    background: rgba(11, 11, 11, 0.433);
+    box-shadow: 0px 4px 8px rgb(250, 249, 249);
+    border-radius: 12px;
 }
 
 #logo{
@@ -36,7 +38,7 @@ body{
 
 #menu{
     font-family: helvetica, Arial;
-    background: #333;
+    /* background: #333; */
     width: 100%;
     margin-bottom: 20px;
 }
@@ -48,6 +50,16 @@ body{
     transition: all 300ms;
     text-transform: uppercase;
     line-height: 46px;
+}
+
+.bxslider div {
+    width: 100%;
+    height: 100%;
+}
+
+.bxslider div img {
+    margin: 0;
+    width: 100%;
 }
 
 #posts{
@@ -62,11 +74,11 @@ body{
 
 .post h2{
     font-size: 30px;
-    color: #333;
+    color: #fff;
 }
 
 .post .date{
-    color: gray;
+    color: #fff;
     display: block;
     margin-top: 5px;
 }
@@ -79,7 +91,7 @@ body{
 
 .post .button-more{
     display:block;
-    width: 70px;
+    width: 120px;
     padding: 15px;
     color: white;
     text-decoration: none;
@@ -99,7 +111,7 @@ body{
     margin-bottom: 20px;
     text-align: center;
     line-height: 10px;
-    color: #333;
+    color: #fff;
 }
 
 #aside img{
@@ -122,11 +134,19 @@ form input[type="password"]{
 }
 
 form input[type="submit"]{
-    background: #eee;
+    width: 70px;
+    background: rgb(35, 34, 34);
     padding: 10px;
-    border: 1px solid #ccc;
-    color: #333;
+    /* border: 1px solid #ccc; */
+    color: #FFF;
     cursor: pointer;
+    border: none;
+}
+
+form input[type="submit"]:hover {
+    background: rgba(212, 211, 211, 0.554);
+    cursor: pointer;
+    border: none;
 }
 
 footer{
@@ -134,7 +154,7 @@ footer{
     background: rgba(51, 51, 51, 0.70);
     color: white;
     height: 47px;
-    width: 65%;
+    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
